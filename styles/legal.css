@@ -1,0 +1,123 @@
+/* Legal Pages Styles */
+
+.page-hero {
+    background: linear-gradient(135deg, var(--color-blue-50) 0%, var(--color-green-50) 100%);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    color: var(--color-gray-600);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Legal Content */
+.legal-content {
+    padding: 5rem 0;
+    background: white;
+}
+
+.legal-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-container .last-updated {
+    color: var(--color-gray-500);
+    font-style: italic;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.legal-container h2 {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-gray-900);
+}
+
+.legal-container h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-gray-800);
+}
+
+.legal-container p {
+    color: var(--color-gray-600);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.legal-container ul,
+.legal-container ol {
+    color: var(--color-gray-600);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.legal-container li {
+    margin-bottom: 0.5rem;
+}
+
+.legal-container a {
+    color: var(--color-blue-600);
+    text-decoration: underline;
+}
+
+.legal-container a:hover {
+    color: var(--color-blue-700);
+}
+
+.legal-container strong {
+    color: var(--color-gray-900);
+}
+
+/* Contact Section */
+.legal-contact {
+    background: var(--color-gray-50);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.legal-contact h3 {
+    margin-top: 0;
+}
+
+.legal-contact p {
+    margin-bottom: 0.5rem;
+}
+
+.legal-contact a {
+    color: var(--color-blue-600);
+    text-decoration: none;
+}
+
+.legal-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .legal-container h2 {
+        font-size: 1.75rem;
+    }
+    
+    .legal-container h3 {
+        font-size: 1.25rem;
+    }
+}

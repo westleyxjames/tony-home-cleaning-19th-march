@@ -1,0 +1,235 @@
+/* Services Page Styles */
+
+.page-hero {
+    background: linear-gradient(135deg, var(--color-blue-50) 0%, var(--color-green-50) 100%);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    color: var(--color-gray-600);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Services Detail */
+.services-detail {
+    padding: 5rem 0;
+    background: white;
+}
+
+.service-detail-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-detail-card:last-child {
+    margin-bottom: 0;
+}
+
+.service-detail-image {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-detail-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.popular-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--color-blue-600);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    z-index: 1;
+}
+
+.service-detail-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-detail-content p {
+    color: var(--color-gray-600);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.service-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-blue-600);
+    margin-bottom: 1.5rem;
+}
+
+.service-detail-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.service-checklist {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.service-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-gray-700);
+}
+
+.service-checklist i {
+    color: var(--color-green-500);
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.service-detail-card.reverse {
+    direction: ltr;
+}
+
+.service-detail-card.reverse .service-detail-image {
+    order: 2;
+}
+
+.service-detail-card.reverse .service-detail-content {
+    order: 1;
+}
+
+/* Additional Services */
+.additional-services {
+    padding: 5rem 0;
+    background: var(--color-gray-50);
+}
+
+.addon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.addon-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.addon-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+.addon-card i {
+    width: 3rem;
+    height: 3rem;
+    color: var(--color-blue-600);
+    margin-bottom: 1rem;
+}
+
+.addon-card h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+}
+
+.addon-card p {
+    color: var(--color-gray-600);
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 5rem 0;
+    background: linear-gradient(to right, var(--color-blue-600), var(--color-blue-500));
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .addon-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .service-detail-card,
+    .service-detail-card.reverse {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-detail-card.reverse .service-detail-image,
+    .service-detail-card.reverse .service-detail-content {
+        order: initial;
+    }
+    
+    .service-detail-content h2 {
+        font-size: 2rem;
+    }
+    
+    .service-price {
+        font-size: 1.75rem;
+    }
+    
+    .addon-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+}

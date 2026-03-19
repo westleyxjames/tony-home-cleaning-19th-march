@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TrueShine Cleaning</title>
+    <meta name="description" content="Contact TrueShine Cleaning for professional cleaning services in Portland, OR. Call +1 503-836-5016 or fill out our contact form.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">✨</span>
+                    TrueShine Cleaning
+                </a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="btn-primary-nav">Get Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sticky Call Button (Mobile) -->
+    <a href="tel:+15038365016" class="sticky-call-btn" aria-label="Call now">
+        <i data-lucide="phone"></i>
+        Call Now
+    </a>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us today. We're here to answer your questions and schedule your cleaning service.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="info-card">
+                    <div class="info-icon bg-blue">
+                        <i data-lucide="phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <a href="tel:+15038365016">+1 503-836-5016</a>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon bg-green">
+                        <i data-lucide="mail"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:help@TrueShineCleaning.site">help@TrueShineCleaning.site</a>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon bg-blue">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <h3>Address</h3>
+                    <a href="https://maps.google.com/?q=6423+NW+St+Helens+Rd+Portland+OR+97214" target="_blank" rel="noopener noreferrer">
+                        6423 NW St Helens Rd<br>Portland, OR 97214
+                    </a>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon bg-green">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <h3>Hours</h3>
+                    <p>Mon-Sat: 8:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <h2>Send Us a Message</h2>
+                <p class="form-subtitle">Fill out the form below and we'll get back to you within 24 hours</p>
+
+                <div id="contactSuccess" class="success-message" style="display: none;">
+                    <i data-lucide="check-circle"></i>
+                    <h3>Message Sent!</h3>
+                    <p>Thank you for contacting us. We'll respond to your message as soon as possible.</p>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us about your cleaning needs, preferred dates, or any questions you have..."></textarea>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">
+                            I agree to the <a href="privacy-policy.html">Privacy Policy</a> and 
+                            <a href="terms-and-conditions.html">Terms & Conditions</a> *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-block">
+                        <i data-lucide="send"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.8!2d-122.7!3d45.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDMzJzM2LjAiTiAxMjLCsDQyJzAwLjAiVw!5e0!3m2!1sen!2sus!4v1234567890"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="TrueShine Cleaning Location">
+                </iframe>
+            </div>
+            <p class="map-address">6423 NW St Helens Rd, Portland, OR 97214, United States</p>
+        </div>
+    </section>
+
+    <!-- Quick Contact CTA -->
+    <section class="quick-contact-cta">
+        <div class="container text-center">
+            <h2>Prefer to Call?</h2>
+            <p>Speak directly with our team and get immediate answers</p>
+            <a href="tel:+15038365016" class="btn-white">
+                <i data-lucide="phone"></i>
+                Call +1 503-836-5016
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">
+                        <span class="logo-icon">✨</span>
+                        TrueShine Cleaning
+                    </h3>
+                    <p>Professional cleaning services for homes across Portland and nearby areas.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i data-lucide="phone"></i> +1 503-836-5016</li>
+                        <li><i data-lucide="mail"></i> help@TrueShineCleaning.site</li>
+                        <li><i data-lucide="map-pin"></i> Portland, OR 97214</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-and-conditions.html">Terms & Conditions</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                </div>
+                <p>&copy; <span id="currentYear"></span> TrueShine Cleaning. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/contact.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

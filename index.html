@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueShine Cleaning - Professional Home Cleaning in Portland, OR</title>
+    <meta name="description" content="Reliable, affordable, and detail-focused cleaning services for homes across Portland and nearby areas. Get your free quote today!">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">✨</span>
+                    TrueShine Cleaning
+                </a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="btn-primary-nav">Get Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sticky Call Button (Mobile) -->
+    <a href="tel:+15038365016" class="sticky-call-btn" aria-label="Call now">
+        <i data-lucide="phone"></i>
+        Call Now
+    </a>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">Professional Home Cleaning You Can Trust</h1>
+                    <p class="hero-subtitle">Reliable, affordable, and detail-focused cleaning services for homes across Portland and nearby areas.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="openQuoteModal()">Get Free Quote</button>
+                        <a href="tel:+15038365016" class="btn-secondary">
+                            <i data-lucide="phone"></i>
+                            Call Now
+                        </a>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1581578949510-fa7315c4c350?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBob3VzZSUyMGNsZWFuaW5nJTIwc2VydmljZXxlbnwxfHx8fDE3NzM4MTE2MTN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Professional cleaning service">
+                        <div class="floating-badge">
+                            <i data-lucide="award"></i>
+                            <div>
+                                <div class="badge-title">Certified</div>
+                                <div class="badge-subtitle">Professionals</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <div class="badge-icon bg-blue">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <p>Background-checked cleaners</p>
+                </div>
+                <div class="trust-badge">
+                    <div class="badge-icon bg-green">
+                        <i data-lucide="check-circle"></i>
+                    </div>
+                    <p>100% satisfaction guarantee</p>
+                </div>
+                <div class="trust-badge">
+                    <div class="badge-icon bg-green">
+                        <i data-lucide="leaf"></i>
+                    </div>
+                    <p>Eco-friendly cleaning options</p>
+                </div>
+                <div class="trust-badge">
+                    <div class="badge-icon bg-blue">
+                        <i data-lucide="calendar"></i>
+                    </div>
+                    <p>Flexible scheduling</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="two-column-grid">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1758273705723-26ef454252ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGNsZWFuaW5nJTIwcHJvZmVzc2lvbmFsJTIwd29tYW58ZW58MXx8fHwxNzczODQwOTY3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Happy cleaning professional">
+                    <div class="decorative-circle circle-1"></div>
+                    <div class="decorative-circle circle-2"></div>
+                </div>
+                
+                <div class="content">
+                    <h2>Why Choose TrueShine?</h2>
+                    <p class="subtitle">We're more than just a cleaning service—we're your trusted partner in maintaining a healthy, beautiful home.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon bg-blue">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <div>
+                                <h3>Trained Professionals</h3>
+                                <p>Our team is thoroughly trained, background-checked, and committed to excellence.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon bg-green">
+                                <i data-lucide="leaf"></i>
+                            </div>
+                            <div>
+                                <h3>Eco-Friendly Products</h3>
+                                <p>We use safe, environmentally friendly cleaning products that are tough on dirt but gentle on your home.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon bg-blue">
+                                <i data-lucide="sparkles"></i>
+                            </div>
+                            <div>
+                                <h3>Attention to Detail</h3>
+                                <p>We don't just clean—we transform your space with meticulous attention to every corner.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview section-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Professional cleaning solutions tailored to your needs</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1597665863042-47e00964d899?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGVhbiUyMG1vZGVybiUyMGxpdmluZyUyMHJvb20lMjBpbnRlcmlvcnxlbnwxfHx8fDE3NzM4MDg2MjV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Standard Cleaning">
+                        <h3>Standard Cleaning</h3>
+                    </div>
+                    <div class="service-content">
+                        <p>Regular cleaning to keep your home fresh and tidy</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check-circle"></i> Dusting & vacuuming</li>
+                            <li><i data-lucide="check-circle"></i> Kitchen cleaning</li>
+                            <li><i data-lucide="check-circle"></i> Bathroom sanitizing</li>
+                            <li><i data-lucide="check-circle"></i> Floor mopping</li>
+                        </ul>
+                        <a href="services.html" class="service-link">
+                            Learn more
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1758570161624-91976093c2b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcGFya2xpbmclMjBjbGVhbiUyMGtpdGNoZW58ZW58MXx8fHwxNzczODIxNzA3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Deep Cleaning">
+                        <h3>Deep Cleaning</h3>
+                    </div>
+                    <div class="service-content">
+                        <p>Thorough cleaning for every corner of your home</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check-circle"></i> Detailed scrubbing</li>
+                            <li><i data-lucide="check-circle"></i> Baseboards & vents</li>
+                            <li><i data-lucide="check-circle"></i> Hard-to-reach areas</li>
+                            <li><i data-lucide="check-circle"></i> Complete sanitization</li>
+                        </ul>
+                        <a href="services.html" class="service-link">
+                            Learn more
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1768548273807-275b0e16fff3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3ZlJTIwb3V0JTIwY2xlYW5pbmclMjBlbXB0eSUyMHJvb218ZW58MXx8fHwxNzczODQwOTY5fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Move-In / Move-Out">
+                        <h3>Move-In / Move-Out</h3>
+                    </div>
+                    <div class="service-content">
+                        <p>Complete cleaning for your moving needs</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check-circle"></i> Full property cleaning</li>
+                            <li><i data-lucide="check-circle"></i> All rooms & surfaces</li>
+                            <li><i data-lucide="check-circle"></i> Ideal for renters</li>
+                            <li><i data-lucide="check-circle"></i> Ready-to-move condition</li>
+                        </ul>
+                        <a href="services.html" class="service-link">
+                            Learn more
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1765277789187-17428ac17008?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmdhbml6ZWQlMjBjbGVhbiUyMGJlZHJvb218ZW58MXx8fHwxNzczODQwOTY3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Recurring Cleaning">
+                        <h3>Recurring Cleaning</h3>
+                    </div>
+                    <div class="service-content">
+                        <p>Scheduled cleaning plans for ongoing maintenance</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check-circle"></i> Weekly plans</li>
+                            <li><i data-lucide="check-circle"></i> Bi-weekly options</li>
+                            <li><i data-lucide="check-circle"></i> Monthly service</li>
+                            <li><i data-lucide="check-circle"></i> Flexible scheduling</li>
+                        </ul>
+                        <a href="services.html" class="service-link">
+                            Learn more
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Preview -->
+    <section class="pricing-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Transparent Pricing</h2>
+                <p>Starting rates for our most popular services</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter Cleaning</h3>
+                    <p class="price">From $99</p>
+                    <p class="price-desc">Perfect for small apartments and regular maintenance</p>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge">MOST POPULAR</div>
+                    <h3>Deep Cleaning</h3>
+                    <p class="price">From $179</p>
+                    <p class="price-desc">Comprehensive cleaning for your entire home</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Move-Out Cleaning</h3>
+                    <p class="price">From $199</p>
+                    <p class="price-desc">Complete cleaning for moving transitions</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="pricing.html" class="btn-primary">
+                    Get Exact Pricing
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Don't just take our word for it</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">"TrueShine made my home spotless. Highly recommend! The team was professional and paid attention to every detail."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Sarah Johnson</p>
+                        <p class="author-location">Portland, OR</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional, on time, and very detailed. Best cleaning service I've used in the Portland area."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Michael Chen</p>
+                        <p class="author-location">Beaverton, OR</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">"Amazing service! They were thorough, respectful, and left my house looking brand new. Will definitely use again."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Emily Rodriguez</p>
+                        <p class="author-location">Lake Oswego, OR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2>Ready to Get Started?</h2>
+            <p>Book your professional cleaning service today and experience the TrueShine difference</p>
+            <div class="cta-buttons">
+                <button class="btn-white" onclick="openQuoteModal()">Get Free Quote</button>
+                <a href="tel:+15038365016" class="btn-outline">
+                    <i data-lucide="phone"></i>
+                    Call +1 503-836-5016
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">
+                        <span class="logo-icon">✨</span>
+                        TrueShine Cleaning
+                    </h3>
+                    <p>Professional cleaning services for homes across Portland and nearby areas.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i data-lucide="phone"></i> +1 503-836-5016</li>
+                        <li><i data-lucide="mail"></i> help@TrueShineCleaning.site</li>
+                        <li><i data-lucide="map-pin"></i> Portland, OR 97214</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-and-conditions.html">Terms & Conditions</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                </div>
+                <p>&copy; <span id="currentYear"></span> TrueShine Cleaning. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Get Your Free Quote</h2>
+                <button class="modal-close" onclick="closeQuoteModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="quoteForm" class="quote-form">
+                    <div class="form-group">
+                        <label for="quoteName">Full Name *</label>
+                        <input type="text" id="quoteName" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quoteEmail">Email *</label>
+                            <input type="email" id="quoteEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quotePhone">Phone *</label>
+                            <input type="tel" id="quotePhone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quoteService">Service Type *</label>
+                        <select id="quoteService" required>
+                            <option value="">Select a service</option>
+                            <option value="standard">Standard Cleaning</option>
+                            <option value="deep">Deep Cleaning</option>
+                            <option value="move">Move-In/Move-Out</option>
+                            <option value="recurring">Recurring Cleaning</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quoteSize">Property Size *</label>
+                            <select id="quoteSize" required>
+                                <option value="">Select size</option>
+                                <option value="small">Small (< 1000 sq ft)</option>
+                                <option value="medium">Medium (1000-2000 sq ft)</option>
+                                <option value="large">Large (2000-3000 sq ft)</option>
+                                <option value="xlarge">Extra Large (> 3000 sq ft)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quoteDate">Preferred Date</label>
+                            <input type="date" id="quoteDate">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quoteMessage">Additional Details</label>
+                        <textarea id="quoteMessage" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="quoteConsent" required>
+                        <label for="quoteConsent">
+                            I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and 
+                            <a href="terms-and-conditions.html" target="_blank">Terms & Conditions</a> *
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-block">Submit Quote Request</button>
+                </form>
+                
+                <div id="quoteSuccess" class="success-message" style="display: none;">
+                    <i data-lucide="check-circle"></i>
+                    <h3>Quote Request Sent!</h3>
+                    <p>Thank you for your interest. We'll get back to you within 24 hours with a detailed quote.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/home.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
